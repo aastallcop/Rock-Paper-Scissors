@@ -61,6 +61,16 @@ function playGame() {
     console.log("You win!");
     console.log("Your score: " + humanScore);
     console.log("Computer's score: " + computerScore);
+  } else if (humanScore < computerScore) {
+    console.log("*****************");
+    console.log("You lose!");
+    console.log("Your score: " + humanScore);
+    console.log("Computer's score: " + computerScore);
+  } else {
+    console.log("*****************");
+    console.log("It's a tie!");
+    console.log("Your score: " + humanScore);
+    console.log("Computer's score: " + computerScore);
   }
 
   //***************************************************************
