@@ -104,7 +104,7 @@ function playGame() {
         console.log("You lose! Scissors beats Paper");
         computerScore++;
       } else {
-        console.log("It's a tie! Rock vs. Rock");
+        console.log("It's a tie! Paper vs. Paper");
       }
       // player chooses scissors
     } else {
