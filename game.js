@@ -52,23 +52,27 @@ function playGame() {
     const computerSelection = getComputerChoice();
 
     playRound(humanSelection, computerSelection);
+    console.log("--------------------");
     console.log("your score: " + humanScore);
-    console.log("Computer's score: " + computerScore + "\n\n");
+    console.log("Computer's score: " + computerScore);
+    console.log("--------------------\n\n");
   }
+
+  console.log("*****************");
   console.log("Game ended");
+  console.log("*****************\n\n");
+
   if (humanScore > computerScore) {
-    console.log("*****************");
     console.log("You win!");
     console.log("Your score: " + humanScore);
     console.log("Computer's score: " + computerScore);
-  } else if (humanScore < computerScore) {
-    console.log("*****************");
-    console.log("You lose!");
+  } else if (humanScore == computerScore) {
+    console.log("It's a tie!");
     console.log("Your score: " + humanScore);
     console.log("Computer's score: " + computerScore);
   } else {
     console.log("*****************");
-    console.log("It's a tie!");
+    console.log("You lose!");
     console.log("Your score: " + humanScore);
     console.log("Computer's score: " + computerScore);
   }
